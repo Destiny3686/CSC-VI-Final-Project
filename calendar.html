@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Budgeting Monthly - Calendar</title>
+</head>
+<body>
+    <header>
+        <h1>Mother's and Money</h1>
+    </header>
+    <nav>
+        <a href="budget.html">Budgeting</a>
+        <a href="monthlyexpenses.html">Monthly Expenses</a>
+        <a href="index.html">Log Out</a>
+    </nav>
+    <main>
+        <section id="calendar-section">
+            <h2>Monthly Calendar</h2>
+            <div class="calendar">
+                <div class="month">
+                    <span class="prev" onclick="prevMonth()">&#9665;</span>
+                    <span class="next" onclick="nextMonth()">&#9655;</span>
+                    <h3 id="month-year">December 2023</h3>
+                </div>
+                <ul class="weekdays">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul id="days" class="days">
+                    <!-- Calendar days will be dynamically generated here using JavaScript -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mother's and Money</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
