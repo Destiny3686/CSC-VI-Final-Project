@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mother's and Money - Home</title>
+</head>
+<body>
+    <header>
+        <h1>Mother's and Money</h1>
+        <button id="account-button" onclick="document.location='signin.html'">Create Account / Sign In</button>
+    </header>
+    <main>
+        <section id="home-section">
+            <h2>Welcome to Mother's and Money</h2>
+            <p>Whether your a first time mother or a experienced mother keeping track of your budget each month can be difficult with all the etra expenses for baby, here at Mother's and Money we hope to help you keep track of your spending and extra exspenses each month.</p>
+
+            <!-- Annual Income Box and Button -->
+            <div id="annual-income-box">
+                <label for="annual-income">Enter Annual Income:</label>
+                <input type="number" id="annual-income" placeholder="Enter your annual income">
+                <button onclick="saveAnnualIncome()">Go</button>
+            </div>
+
+            <!-- Hourly Rate Box -->
+            <div id="hourly-rate-box">
+                <label for="hourly-rate">Enter Hourly Rate:</label>
+                <input type="number" id="hourly-rate" placeholder="Enter your hourly rate">
+                <button onclick="saveHourlyRate()">Save Hourly Rate</button>
+
+            </div>
+
+            <!-- Hours Worked Box -->
+            <div id="hours-worked-box">
+                <label for="hours-worked">Enter Hours Worked:</label>
+                <input type="number" id="hours-worked" placeholder="Enter the hours worked">
+                <button onclick="saveHoursWorked()">Save Hours Worked</button>
+
+            </div>
+
+            <!-- Total Income After Taxes Box -->
+            <div id="total-income-box">
+                <label for="total-income">Total Income After Taxes:</label>
+                <input type="text" id="total-income" readonly>
+            </div>
+            <button onclick="calculateAndDisplayTotalIncome()">Calculate</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mother's and Money</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
