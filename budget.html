@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Mother's and Money - Budgeting</title>
+</head>
+<body>
+    <header>
+        <h1>Mother's and Money</h1>
+        <nav>
+            <a href="calendar.html">Calendar</a>
+            <a href="monthlyexpenses.html">Monthly Expenses</a>
+            <a href="index.html">Log Out</a>
+        </nav>
+    </header>
+    <main>
+        <section id="budget-section">
+            <h2>Monthly Budgeting</h2>
+            <label for="current-month-salary">Enter Salary for Current Month: $</label>
+            <input type="number" id="current-month-salary" placeholder="Enter your salary">
+            <button onclick="saveSalary()">Save</button>
+
+            <div class="salary-list">
+                <!-- Display the salary input for each month -->
+                <div class="month-salary">
+                    <h3>January</h3>
+                    <p>Salary: $2000</p>
+                </div>
+                <!-- Repeat the above structure for each month -->
+                <!-- Example: February, March, ... -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mother's and Money</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
