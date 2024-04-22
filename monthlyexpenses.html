@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Mother's and Money - Monthly Expenses</title>
+</head>
+<body>
+    <header>
+        <h1>Mother's and Money</h1>
+        <nav>
+            <a href="calendar.html">Calendar</a>
+            <a href="budget.html">Budgeting</a>
+            <a href="index.html">Log Out</a>
+        </nav>
+    </header>
+    <main>
+        <section id="monthly-expenses-section">
+            <h2>Monthly Expenses</h2>
+            <div id="current-month-info">
+                <h3 id="current-month">January 2023</h3>
+                <p>Total Salary: $2000</p>
+            </div>
+
+            <div id="expenses-list">
+                <h3>Expenses</h3>
+                <label for="expense-category">Category:</label>
+                <input type="text" id="expense-category" placeholder="Enter expense category">
+
+                <label for="expense-amount">Amount ($):</label>
+                <input type="number" id="expense-amount" placeholder="Enter expense amount">
+
+                <button onclick="addExpense()">Add Expense</button>
+
+                <ul id="expenses-display">
+                    <!-- Display expenses here dynamically -->
+                </ul>
+            </div>
+
+            <div id="remaining-amount">
+                <h3>Remaining Amount</h3>
+                <p id="remaining-amount-value">$2000</p>
+            </div>
+
+            <div id="navigation">
+                <button onclick="navigateToPreviousMonth()">← Previous Month</button>
+                <button onclick="addNewMonth()">+ New Month</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mother's and Money</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
